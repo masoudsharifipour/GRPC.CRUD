@@ -1,0 +1,77 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/masoud/RiderProjects/GrpcService_Crud/GrpcService_Crud/GrpcService_Crud.csproj",
+    "projectName": "GrpcService_Crud",
+    "projectPath": "/home/masoud/RiderProjects/GrpcService_Crud/GrpcService_Crud/GrpcService_Crud.csproj",
+    "outputPath": "/home/masoud/RiderProjects/GrpcService_Crud/GrpcService_Crud/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {},
+      "https://nexus.indraproject.ir/repository/Indra-dev-nuget-proxy/": {},
+      "https://nexus.indraproject.ir/repository/indra-dev-nuget-hosted/": {},
+      "https://nexus.indraproject.ir/repository/indra-dev-nuget/": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "AutoMapper": {
+          "target": "Package",
+          "version": "[10.0.0, )"
+        },
+        "Grpc.AspNetCore": {
+          "target": "Package",
+          "version": "[2.27.0, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "target": "Package",
+          "version": "[3.1.5, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+    }
+  }
+}

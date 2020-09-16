@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/Grpc.Client.csproj": {}
+  },
+  "projects": {
+    "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/Grpc.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/Grpc.Client.csproj",
+        "projectName": "Grpc.Client",
+        "projectPath": "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/Grpc.Client.csproj",
+        "packagesPath": "/home/masoud/.nuget/packages/",
+        "outputPath": "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/masoud/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.indraproject.ir/repository/Indra-dev-nuget-proxy/": {},
+          "https://nexus.indraproject.ir/repository/indra-dev-nuget-hosted/": {},
+          "https://nexus.indraproject.ir/repository/indra-dev-nuget/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.12.3, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.29.0, )"
+            },
+            "Grpc.Tools": {
+              "target": "Package",
+              "version": "[2.30.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
