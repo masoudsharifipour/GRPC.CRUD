@@ -1016,35 +1016,39 @@
     ]
   },
   "packageFolders": {
-    "/home/masoud/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\m.sharifipoor\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/Grpc.Client.csproj",
+      "projectUniqueName": "C:\\Project\\Personal\\GRPC.CRUD\\Grpc.Client\\Grpc.Client.csproj",
       "projectName": "Grpc.Client",
-      "projectPath": "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/Grpc.Client.csproj",
-      "packagesPath": "/home/masoud/.nuget/packages/",
-      "outputPath": "/home/masoud/RiderProjects/GrpcService_Crud/Grpc.Client/obj/",
+      "projectPath": "C:\\Project\\Personal\\GRPC.CRUD\\Grpc.Client\\Grpc.Client.csproj",
+      "packagesPath": "C:\\Users\\m.sharifipoor\\.nuget\\packages\\",
+      "outputPath": "C:\\Project\\Personal\\GRPC.CRUD\\Grpc.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/masoud/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\m.sharifipoor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.indraproject.ir/repository/Indra-dev-nuget-proxy/": {},
-        "https://nexus.indraproject.ir/repository/indra-dev-nuget-hosted/": {},
-        "https://nexus.indraproject.ir/repository/indra-dev-nuget/": {}
+        "https://nexus.indraproject.ir/repository/hermes-hosted/": {},
+        "https://nexus.indraproject.ir/repository/indra-dev-nuget-hosted": {},
+        "https://nexus.indraproject.ir/repository/indra-dev-nuget-proxy/": {},
+        "https://nexus.indraproject.ir/repository/nuget-hosted/": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -1056,6 +1060,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Google.Protobuf": {
             "target": "Package",
@@ -1084,12 +1089,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.7, 3.1.7]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.2.20479.15\\RuntimeIdentifierGraph.json"
       }
     }
   }

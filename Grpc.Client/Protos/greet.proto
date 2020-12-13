@@ -19,6 +19,7 @@ message Employee {
   int32 employeeID = 1;
   string firstName = 2;
   string lastName = 3;
+  string Address = 4;
 }
 
 

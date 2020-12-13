@@ -24,22 +24,22 @@ namespace GrpcService_Crud {
     static GreetReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0IgcKBUVtcHR5IkMKCEVtcGxv",
+            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0IgcKBUVtcHR5IlQKCEVtcGxv",
             "eWVlEhIKCmVtcGxveWVlSUQYASABKAUSEQoJZmlyc3ROYW1lGAIgASgJEhAK",
-            "CGxhc3ROYW1lGAMgASgJIisKCUVtcGxveWVlcxIeCgVpdGVtcxgBIAMoCzIP",
-            "LmdyZWV0LkVtcGxveWVlIiQKDkVtcGxveWVlRmlsdGVyEhIKCmVtcGxveWVl",
-            "SUQYASABKAUy8gEKDEVtcGxveWVlQ1JVRBIrCglTZWxlY3RBbGwSDC5ncmVl",
-            "dC5FbXB0eRoQLmdyZWV0LkVtcGxveWVlcxI0CgpTZWxlY3RCeUlEEhUuZ3Jl",
-            "ZXQuRW1wbG95ZWVGaWx0ZXIaDy5ncmVldC5FbXBsb3llZRInCgZJbnNlcnQS",
-            "Dy5ncmVldC5FbXBsb3llZRoMLmdyZWV0LkVtcHR5EicKBlVwZGF0ZRIPLmdy",
-            "ZWV0LkVtcGxveWVlGgwuZ3JlZXQuRW1wdHkSLQoGRGVsZXRlEhUuZ3JlZXQu",
-            "RW1wbG95ZWVGaWx0ZXIaDC5ncmVldC5FbXB0eUITqgIQR3JwY1NlcnZpY2Vf",
-            "Q3J1ZGIGcHJvdG8z"));
+            "CGxhc3ROYW1lGAMgASgJEg8KB0FkZHJlc3MYBCABKAkiKwoJRW1wbG95ZWVz",
+            "Eh4KBWl0ZW1zGAEgAygLMg8uZ3JlZXQuRW1wbG95ZWUiJAoORW1wbG95ZWVG",
+            "aWx0ZXISEgoKZW1wbG95ZWVJRBgBIAEoBTLyAQoMRW1wbG95ZWVDUlVEEisK",
+            "CVNlbGVjdEFsbBIMLmdyZWV0LkVtcHR5GhAuZ3JlZXQuRW1wbG95ZWVzEjQK",
+            "ClNlbGVjdEJ5SUQSFS5ncmVldC5FbXBsb3llZUZpbHRlchoPLmdyZWV0LkVt",
+            "cGxveWVlEicKBkluc2VydBIPLmdyZWV0LkVtcGxveWVlGgwuZ3JlZXQuRW1w",
+            "dHkSJwoGVXBkYXRlEg8uZ3JlZXQuRW1wbG95ZWUaDC5ncmVldC5FbXB0eRIt",
+            "CgZEZWxldGUSFS5ncmVldC5FbXBsb3llZUZpbHRlchoMLmdyZWV0LkVtcHR5",
+            "QhOqAhBHcnBjU2VydmljZV9DcnVkYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService_Crud.Empty), global::GrpcService_Crud.Empty.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService_Crud.Employee), global::GrpcService_Crud.Employee.Parser, new[]{ "EmployeeID", "FirstName", "LastName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService_Crud.Employee), global::GrpcService_Crud.Employee.Parser, new[]{ "EmployeeID", "FirstName", "LastName", "Address" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService_Crud.Employees), global::GrpcService_Crud.Employees.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService_Crud.EmployeeFilter), global::GrpcService_Crud.EmployeeFilter.Parser, new[]{ "EmployeeID" }, null, null, null, null)
           }));
@@ -177,6 +177,7 @@ namespace GrpcService_Crud {
       employeeID_ = other.employeeID_;
       firstName_ = other.firstName_;
       lastName_ = other.lastName_;
+      address_ = other.address_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -218,6 +219,17 @@ namespace GrpcService_Crud {
       }
     }
 
+    /// <summary>Field number for the "Address" field.</summary>
+    public const int AddressFieldNumber = 4;
+    private string address_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Address {
+      get { return address_; }
+      set {
+        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Employee);
@@ -234,6 +246,7 @@ namespace GrpcService_Crud {
       if (EmployeeID != other.EmployeeID) return false;
       if (FirstName != other.FirstName) return false;
       if (LastName != other.LastName) return false;
+      if (Address != other.Address) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -243,6 +256,7 @@ namespace GrpcService_Crud {
       if (EmployeeID != 0) hash ^= EmployeeID.GetHashCode();
       if (FirstName.Length != 0) hash ^= FirstName.GetHashCode();
       if (LastName.Length != 0) hash ^= LastName.GetHashCode();
+      if (Address.Length != 0) hash ^= Address.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -268,6 +282,10 @@ namespace GrpcService_Crud {
         output.WriteRawTag(26);
         output.WriteString(LastName);
       }
+      if (Address.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Address);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -284,6 +302,9 @@ namespace GrpcService_Crud {
       }
       if (LastName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LastName);
+      }
+      if (Address.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -304,6 +325,9 @@ namespace GrpcService_Crud {
       }
       if (other.LastName.Length != 0) {
         LastName = other.LastName;
+      }
+      if (other.Address.Length != 0) {
+        Address = other.Address;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -326,6 +350,10 @@ namespace GrpcService_Crud {
           }
           case 26: {
             LastName = input.ReadString();
+            break;
+          }
+          case 34: {
+            Address = input.ReadString();
             break;
           }
         }

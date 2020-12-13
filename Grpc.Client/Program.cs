@@ -15,12 +15,13 @@ namespace Grpc.Client
             // The port number(5001) must match the port of the gRPC server.
             using var channel = GrpcChannel.ForAddress("http://localhost:5001");
             var client =  new EmployeeCRUD.EmployeeCRUDClient(channel);
-            // Empty response1 = client.Insert(new Employee()
-            // {
-            //     FirstName = "Tom",
-            //     LastName = "Jerry"
-            // });
-            Employees employees = client.SelectAll
+            var response1 = client.Insert(new Employee()
+            {
+                FirstName = "Masoud",
+                LastName = "Sharifi",
+                Address = "Iran Tehran"
+            });
+            var employees = client.SelectAll
                 (new Empty());
 
             Console.WriteLine(employees);
